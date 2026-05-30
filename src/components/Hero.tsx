@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="hero"
@@ -6,26 +10,23 @@ export default function Hero() {
     >
       <div className="mx-auto max-w-4xl px-4 text-center">
         <h1 className="text-4xl font-bold tracking-tight text-primary-900 sm:text-5xl lg:text-6xl">
-          Glänzende Ergebnisse,
+          {t('hero.title')}
           <br />
-          <span className="text-primary">jedes Mal.</span>
+          <span className="text-primary">{t('hero.titleHighlight')}</span>
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">
-          Willkommen bei AquaClean – Ihrer modernen Waschstraße mit umweltfreundlicher Technologie,
-          fairen Preisen und erstklassiger Fahrzeugpflege.
-        </p>
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">{t('hero.subtitle')}</p>
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
             href="#preise"
             className="rounded-full bg-primary px-8 py-3 text-lg font-semibold text-white shadow-lg transition-all hover:bg-primary-dark hover:shadow-xl"
           >
-            Unsere Programme
+            {t('hero.ctaPrograms')}
           </a>
           <a
             href="#standort"
             className="rounded-full border-2 border-primary px-8 py-3 text-lg font-semibold text-primary transition-all hover:bg-primary-50"
           >
-            Standort & Anfahrt
+            {t('hero.ctaLocation')}
           </a>
         </div>
       </div>

@@ -1,56 +1,64 @@
-const hours = [
-  { day: 'Montag', time: '07:00 – 21:00' },
-  { day: 'Dienstag', time: '07:00 – 21:00' },
-  { day: 'Mittwoch', time: '07:00 – 21:00' },
-  { day: 'Donnerstag', time: '07:00 – 21:00' },
-  { day: 'Freitag', time: '07:00 – 21:00' },
-  { day: 'Samstag', time: '08:00 – 20:00' },
-  { day: 'Sonntag', time: '09:00 – 18:00' },
+import { useTranslation } from 'react-i18next';
+
+const dayKeys = [
+  'monday',
+  'tuesday',
+  'wednesday',
+  'thursday',
+  'friday',
+  'saturday',
+  'sunday',
+] as const;
+
+const times = [
+  '07:00 – 21:00',
+  '07:00 – 21:00',
+  '07:00 – 21:00',
+  '07:00 – 21:00',
+  '07:00 – 21:00',
+  '08:00 – 20:00',
+  '09:00 – 18:00',
 ];
 
 function getCurrentDay(): number {
   const day = new Date().getDay();
-  // Convert Sunday=0 to index 6, Monday=1 to index 0, etc.
   return day === 0 ? 6 : day - 1;
 }
 
 export default function Hours() {
+  const { t } = useTranslation();
   const today = getCurrentDay();
 
   return (
     <section id="oeffnungszeiten" className="bg-white py-20">
       <div className="mx-auto max-w-4xl px-4">
         <h2 className="mb-2 text-center text-3xl font-bold text-primary-900 sm:text-4xl">
-          Öffnungszeiten
+          {t('hours.title')}
         </h2>
-        <p className="mb-12 text-center text-gray-600">
-          Wir sind fast jeden Tag für Sie da – auch am Wochenende.
-        </p>
+        <p className="mb-12 text-center text-gray-600">{t('hours.subtitle')}</p>
 
         <div className="mx-auto max-w-md overflow-hidden rounded-2xl bg-primary-50 shadow-md">
-          {hours.map((entry, index) => (
+          {dayKeys.map((dayKey, index) => (
             <div
-              key={entry.day}
+              key={dayKey}
               className={`flex items-center justify-between px-6 py-4 ${
-                index !== hours.length - 1 ? 'border-b border-primary-100' : ''
+                index !== dayKeys.length - 1 ? 'border-b border-primary-100' : ''
               } ${index === today ? 'bg-primary-200/60 font-semibold' : ''}`}
             >
               <span className="text-gray-800">
-                {entry.day}
+                {t(`hours.days.${dayKey}`)}
                 {index === today && (
                   <span className="ml-2 inline-block rounded-full bg-primary px-2 py-0.5 text-xs text-white">
-                    Heute
+                    {t('hours.today')}
                   </span>
                 )}
               </span>
-              <span className="text-gray-700">{entry.time}</span>
+              <span className="text-gray-700">{times[index]}</span>
             </div>
           ))}
         </div>
 
-        <p className="mt-6 text-center text-sm text-gray-500">
-          An gesetzlichen Feiertagen gelten ggf. abweichende Öffnungszeiten.
-        </p>
+        <p className="mt-6 text-center text-sm text-gray-500">{t('hours.holiday')}</p>
       </div>
     </section>
   );

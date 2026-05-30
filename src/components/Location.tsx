@@ -1,13 +1,15 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Location() {
+  const { t } = useTranslation();
+
   return (
     <section id="standort" className="bg-primary-50 py-20">
       <div className="mx-auto max-w-6xl px-4">
         <h2 className="mb-2 text-center text-3xl font-bold text-primary-900 sm:text-4xl">
-          Standort & Anfahrt
+          {t('location.title')}
         </h2>
-        <p className="mb-12 text-center text-gray-600">
-          Finden Sie uns ganz einfach – direkt an der Hauptstraße mit ausreichend Parkplätzen.
-        </p>
+        <p className="mb-12 text-center text-gray-600">{t('location.subtitle')}</p>
 
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Map */}
@@ -27,37 +29,34 @@ export default function Location() {
           {/* Contact info */}
           <div className="flex flex-col justify-center space-y-6">
             <div>
-              <h3 className="text-lg font-semibold text-primary-900">Adresse</h3>
+              <h3 className="text-lg font-semibold text-primary-900">{t('location.address')}</h3>
               <p className="mt-1 text-gray-700">
                 AquaClean Waschstraße
                 <br />
-                Musterstraße 42
+                {t('location.street')}
                 <br />
-                60311 Frankfurt am Main
+                {t('location.city')}
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-900">Kontakt</h3>
+              <h3 className="text-lg font-semibold text-primary-900">{t('location.contact')}</h3>
               <p className="mt-1 text-gray-700">
                 Tel:{' '}
                 <a href="tel:+4969123456" className="text-primary hover:underline">
-                  069 / 123 456
+                  {t('location.phone')}
                 </a>
                 <br />
                 E-Mail:{' '}
                 <a href="mailto:info@aquaclean-wash.de" className="text-primary hover:underline">
-                  info@aquaclean-wash.de
+                  {t('location.email')}
                 </a>
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary-900">Anfahrt</h3>
-              <p className="mt-1 text-sm text-gray-600">
-                Direkt an der B1, Ausfahrt Musterstadt-Mitte. Kostenlose Parkplätze direkt vor der
-                Anlage.
-              </p>
+              <h3 className="text-lg font-semibold text-primary-900">{t('location.directions')}</h3>
+              <p className="mt-1 text-sm text-gray-600">{t('location.directionsText')}</p>
             </div>
 
             <a
@@ -80,7 +79,7 @@ export default function Location() {
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              Route planen
+              {t('location.routeButton')}
             </a>
           </div>
         </div>

@@ -1,60 +1,59 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Imprint() {
+  const { t } = useTranslation();
+
   return (
     <section id="impressum" className="bg-white py-20">
       <div className="mx-auto max-w-4xl px-4">
         <h2 className="mb-8 text-center text-3xl font-bold text-primary-900 sm:text-4xl">
-          Impressum
+          {t('imprint.title')}
         </h2>
 
         <div className="grid gap-8 sm:grid-cols-2">
           <div>
-            <h3 className="text-lg font-semibold text-primary-900">Angaben gemäß § 5 TMG</h3>
+            <h3 className="text-lg font-semibold text-primary-900">{t('imprint.legalTitle')}</h3>
             <p className="mt-2 text-gray-700">
-              AquaClean Waschstraße GmbH
+              {t('imprint.company')}
               <br />
-              Musterstraße 42
+              {t('location.street')}
               <br />
-              60311 Frankfurt am Main
+              {t('location.city')}
             </p>
             <p className="mt-4 text-gray-700">
-              <strong>Vertreten durch:</strong>
+              <strong>{t('imprint.representedBy')}</strong>
               <br />
-              Max Mustermann, Geschäftsführer
+              {t('imprint.ceo')}
             </p>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-primary-900">Kontakt</h3>
+            <h3 className="text-lg font-semibold text-primary-900">{t('imprint.contact')}</h3>
             <p className="mt-2 text-gray-700">
-              Telefon: 069 / 123 456
+              Telefon: {t('location.phone')}
               <br />
-              E-Mail: info@aquaclean-wash.de
+              E-Mail: {t('location.email')}
             </p>
 
-            <h3 className="mt-6 text-lg font-semibold text-primary-900">Registereintrag</h3>
+            <h3 className="mt-6 text-lg font-semibold text-primary-900">{t('imprint.registry')}</h3>
             <p className="mt-2 text-gray-700">
-              Handelsregister: Amtsgericht Frankfurt am Main
+              {t('imprint.registryCourt')}
               <br />
-              Registernummer: HRB 12345
+              {t('imprint.registryNumber')}
             </p>
 
-            <h3 className="mt-6 text-lg font-semibold text-primary-900">Umsatzsteuer-ID</h3>
+            <h3 className="mt-6 text-lg font-semibold text-primary-900">{t('imprint.vatId')}</h3>
             <p className="mt-2 text-gray-700">
-              Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:
+              {t('imprint.vatIdText')}
               <br />
-              DE 123 456 789
+              {t('imprint.vatNumber')}
             </p>
           </div>
         </div>
 
         <div className="mt-12 rounded-xl border border-primary-100 bg-primary-50/50 p-6">
-          <h3 className="text-lg font-semibold text-primary-900">Haftungsausschluss</h3>
-          <p className="mt-2 text-sm text-gray-600">
-            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
-            Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
-            Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
-            nach den allgemeinen Gesetzen verantwortlich.
-          </p>
+          <h3 className="text-lg font-semibold text-primary-900">{t('imprint.disclaimer')}</h3>
+          <p className="mt-2 text-sm text-gray-600">{t('imprint.disclaimerText')}</p>
         </div>
       </div>
     </section>
