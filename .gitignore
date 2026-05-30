@@ -38,3 +38,9 @@ Desktop.ini
 # Misc
 *.tgz
 .cache
+
+# Test
+test-results/
+playwright-report/
+blob-report/
+coverage/
