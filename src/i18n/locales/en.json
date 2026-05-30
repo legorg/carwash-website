@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Home",
+    "hours": "Opening Hours",
+    "pricing": "Pricing",
+    "technology": "Technology",
+    "location": "Location",
+    "imprint": "Imprint"
+  },
+  "hero": {
+    "title": "Brilliant Results,",
+    "titleHighlight": "Every Time.",
+    "subtitle": "Welcome to AquaClean – your modern car wash with eco-friendly technology, fair prices, and first-class vehicle care.",
+    "ctaPrograms": "Our Programs",
+    "ctaLocation": "Location & Directions"
+  },
+  "hours": {
+    "title": "Opening Hours",
+    "subtitle": "We're here for you almost every day – weekends included.",
+    "today": "Today",
+    "holiday": "Opening hours may vary on public holidays.",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    }
+  },
+  "pricing": {
+    "title": "Our Wash Programs",
+    "subtitle": "Choose the right program for your vehicle.",
+    "extras": "Add-ons",
+    "programs": {
+      "basic": {
+        "name": "Basic",
+        "price": "€8.90",
+        "description": "A quick basic clean for everyday needs.",
+        "features": ["High-pressure pre-wash", "Shampoo wash", "Clear rinse", "Drying"]
+      },
+      "comfort": {
+        "name": "Comfort",
+        "price": "€12.90",
+        "description": "Thorough care with a glossy finish.",
+        "features": [
+          "High-pressure pre-wash",
+          "Shampoo wash",
+          "Underbody wash",
+          "Hot wax sealant",
+          "Clear rinse & drying"
+        ]
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "€17.90",
+        "description": "Complete package for maximum protection and shine.",
+        "features": [
+          "Intensive pre-wash",
+          "Shampoo wash",
+          "Underbody wash",
+          "Wheel cleaning",
+          "Nano sealant",
+          "Clear rinse & drying"
+        ]
+      }
+    },
+    "extrasList": {
+      "interior": { "name": "Interior vacuum cleaning", "price": "€2.00" },
+      "wheels": { "name": "Intensive wheel cleaning", "price": "€3.00" },
+      "insects": { "name": "Insect remover", "price": "€1.50" },
+      "scent": { "name": "Air freshener", "price": "€1.00" }
+    }
+  },
+  "technology": {
+    "title": "State-of-the-Art Technology",
+    "subtitle": "We rely on innovative technology for optimal cleaning results – eco-friendly and efficient.",
+    "features": {
+      "water": {
+        "title": "Water Recycling System",
+        "description": "Up to 85% of wash water is treated and reused – good for the environment and your conscience."
+      },
+      "brushes": {
+        "title": "Paint-Friendly Textile Brushes",
+        "description": "Our modern textile wash systems clean effectively while protecting sensitive paint and surfaces."
+      },
+      "nano": {
+        "title": "Nano Sealant",
+        "description": "Our premium sealant creates an invisible protective layer that repels water and dirt."
+      },
+      "drying": {
+        "title": "Energy-Efficient Drying",
+        "description": "High-performance blowers with low energy consumption for streak-free drying in seconds."
+      }
+    }
+  },
+  "location": {
+    "title": "Location & Directions",
+    "subtitle": "Find us easily – right on the main road with plenty of parking.",
+    "address": "Address",
+    "contact": "Contact",
+    "directions": "Directions",
+    "directionsText": "Directly on the B1, exit Musterstadt-Mitte. Free parking right in front of the facility.",
+    "routeButton": "Plan route",
+    "street": "Musterstraße 42",
+    "city": "60311 Frankfurt am Main",
+    "phone": "069 / 123 456",
+    "email": "info@aquaclean-wash.de"
+  },
+  "imprint": {
+    "title": "Legal Notice",
+    "legalTitle": "Information according to § 5 TMG",
+    "company": "AquaClean Waschstraße GmbH",
+    "representedBy": "Represented by:",
+    "ceo": "Max Mustermann, Managing Director",
+    "contact": "Contact",
+    "registry": "Commercial Register",
+    "registryCourt": "Registry: District Court Frankfurt am Main",
+    "registryNumber": "Registration number: HRB 12345",
+    "vatId": "VAT ID",
+    "vatIdText": "VAT identification number according to § 27a UStG:",
+    "vatNumber": "DE 123 456 789",
+    "disclaimer": "Disclaimer",
+    "disclaimerText": "The contents of our pages have been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to § 7 para. 1 TMG."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy"
+  }
+}

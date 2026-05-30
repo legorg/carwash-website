@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Start",
+    "hours": "Öffnungszeiten",
+    "pricing": "Preise",
+    "technology": "Technologie",
+    "location": "Standort",
+    "imprint": "Impressum"
+  },
+  "hero": {
+    "title": "Glänzende Ergebnisse,",
+    "titleHighlight": "jedes Mal.",
+    "subtitle": "Willkommen bei AquaClean – Ihrer modernen Waschstraße mit umweltfreundlicher Technologie, fairen Preisen und erstklassiger Fahrzeugpflege.",
+    "ctaPrograms": "Unsere Programme",
+    "ctaLocation": "Standort & Anfahrt"
+  },
+  "hours": {
+    "title": "Öffnungszeiten",
+    "subtitle": "Wir sind fast jeden Tag für Sie da – auch am Wochenende.",
+    "today": "Heute",
+    "holiday": "An gesetzlichen Feiertagen gelten ggf. abweichende Öffnungszeiten.",
+    "days": {
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag"
+    }
+  },
+  "pricing": {
+    "title": "Unsere Waschprogramme",
+    "subtitle": "Wählen Sie das passende Programm für Ihr Fahrzeug.",
+    "extras": "Zusatzleistungen",
+    "programs": {
+      "basic": {
+        "name": "Basis",
+        "price": "8,90 €",
+        "description": "Die schnelle Grundreinigung für den Alltag.",
+        "features": ["Hochdruckvorwäsche", "Shampoo-Wäsche", "Klarspülung", "Trocknung"]
+      },
+      "comfort": {
+        "name": "Komfort",
+        "price": "12,90 €",
+        "description": "Gründliche Pflege mit Glanzfinish.",
+        "features": [
+          "Hochdruckvorwäsche",
+          "Shampoo-Wäsche",
+          "Unterbodenwäsche",
+          "Heißwachs-Versiegelung",
+          "Klarspülung & Trocknung"
+        ]
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "17,90 €",
+        "description": "Komplettpaket für maximalen Schutz und Glanz.",
+        "features": [
+          "Intensiv-Vorwäsche",
+          "Shampoo-Wäsche",
+          "Unterbodenwäsche",
+          "Felgenreinigung",
+          "Nano-Versiegelung",
+          "Klarspülung & Trocknung"
+        ]
+      }
+    },
+    "extrasList": {
+      "interior": { "name": "Innenreinigung (Sauger)", "price": "2,00 €" },
+      "wheels": { "name": "Felgenreinigung intensiv", "price": "3,00 €" },
+      "insects": { "name": "Insektenentferner", "price": "1,50 €" },
+      "scent": { "name": "Duftbaum", "price": "1,00 €" }
+    }
+  },
+  "technology": {
+    "title": "Modernste Technologie",
+    "subtitle": "Wir setzen auf innovative Technik für optimale Reinigungsergebnisse – umweltschonend und effizient.",
+    "features": {
+      "water": {
+        "title": "Wasserrecycling-System",
+        "description": "Bis zu 85% des Waschwassers wird aufbereitet und wiederverwendet – gut für die Umwelt und Ihr Gewissen."
+      },
+      "brushes": {
+        "title": "Lackschonende Textilbürsten",
+        "description": "Unsere modernen Textilwaschanlagen reinigen effektiv und schonen dabei empfindliche Lacke und Oberflächen."
+      },
+      "nano": {
+        "title": "Nano-Versiegelung",
+        "description": "Unsere Premium-Versiegelung bildet eine unsichtbare Schutzschicht, die Wasser und Schmutz abperlen lässt."
+      },
+      "drying": {
+        "title": "Energieeffiziente Trocknung",
+        "description": "Hochleistungsgebläse mit niedrigem Energieverbrauch für eine streifenfreie Trocknung in Sekunden."
+      }
+    }
+  },
+  "location": {
+    "title": "Standort & Anfahrt",
+    "subtitle": "Finden Sie uns ganz einfach – direkt an der Hauptstraße mit ausreichend Parkplätzen.",
+    "address": "Adresse",
+    "contact": "Kontakt",
+    "directions": "Anfahrt",
+    "directionsText": "Direkt an der B1, Ausfahrt Musterstadt-Mitte. Kostenlose Parkplätze direkt vor der Anlage.",
+    "routeButton": "Route planen",
+    "street": "Musterstraße 42",
+    "city": "60311 Frankfurt am Main",
+    "phone": "069 / 123 456",
+    "email": "info@aquaclean-wash.de"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "legalTitle": "Angaben gemäß § 5 TMG",
+    "company": "AquaClean Waschstraße GmbH",
+    "representedBy": "Vertreten durch:",
+    "ceo": "Max Mustermann, Geschäftsführer",
+    "contact": "Kontakt",
+    "registry": "Registereintrag",
+    "registryCourt": "Handelsregister: Amtsgericht Frankfurt am Main",
+    "registryNumber": "Registernummer: HRB 12345",
+    "vatId": "Umsatzsteuer-ID",
+    "vatIdText": "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:",
+    "vatNumber": "DE 123 456 789",
+    "disclaimer": "Haftungsausschluss",
+    "disclaimerText": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich."
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz"
+  }
+}
