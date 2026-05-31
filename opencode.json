@@ -9,5 +9,62 @@
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
       }
     }
+  },
+  "command": {
+    "test": {
+      "description": "Run unit tests (Vitest)",
+      "prompt": "Run `pnpm test` and report the results. If any tests fail, analyze the failures and suggest fixes."
+    },
+    "test:e2e": {
+      "description": "Run E2E tests (Playwright)",
+      "prompt": "Run `pnpm build` then `pnpm test:e2e --project=chromium` and report the results. If any tests fail, analyze the failures and suggest fixes."
+    },
+    "lint": {
+      "description": "Lint and format check",
+      "prompt": "Run `pnpm lint` and `pnpm format:check`. Report any issues found and fix them if possible."
+    },
+    "ci": {
+      "description": "Full CI check (format, lint, build, test)",
+      "prompt": "Run the full CI pipeline locally: 1) `pnpm format:check` 2) `pnpm lint` 3) `pnpm build` 4) `pnpm test`. Report any failures and fix them."
+    },
+    "deploy": {
+      "description": "Build and preview the site locally",
+      "prompt": "Run `pnpm build` then `pnpm preview`. Tell the user the local URL where they can view the site."
+    }
+  },
+  "permission": {
+    "edit": {
+      "src/**": "allow",
+      "e2e/**": "allow",
+      ".opencode/**": "allow",
+      "opencode.json": "allow",
+      "AGENTS.md": "allow",
+      ".github/**": "allow",
+      "package.json": "allow",
+      "*.config.*": "allow",
+      "tsconfig*": "allow",
+      "index.html": "allow",
+      ".gitignore": "allow",
+      ".prettierrc": "allow",
+      "node_modules/**": "deny",
+      "dist/**": "deny",
+      "*": "ask"
+    },
+    "bash": {
+      "pnpm *": "allow",
+      "git status": "allow",
+      "git diff*": "allow",
+      "git log*": "allow",
+      "git add*": "allow",
+      "git commit*": "allow",
+      "git push*": "allow",
+      "git checkout*": "allow",
+      "git branch*": "allow",
+      "npx playwright*": "allow",
+      "npx vitest*": "allow",
+      "rm -rf *": "deny",
+      "del *": "deny",
+      "*": "ask"
+    }
   }
 }
